@@ -1,0 +1,53 @@
+.menu{
+    width: 100%;
+    height: 70px;
+    background-color: gold;
+    
+    
+}
+
+ul li{ 
+    position: relative;
+    top: 10px;
+    list-style: none;
+    float: left;
+    background-color: red;
+    width: 120px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 40px;
+    box-shadow: 3px 3px black;
+    
+
+    
+}
+
+ul li a:link{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-weight: bolder;
+       
+}
+ul li:hover{
+    background-color: green;
+    transition: 1s;
+}
+ul li a:hover{
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    font-weight: bolder;
+    transition: 1s;
+}
+ul li>ul li{
+    position: relative;
+    left: -45px;
+    display: none;
+}
+
+ul li:hover>ul li{
+    display: block;
+}
